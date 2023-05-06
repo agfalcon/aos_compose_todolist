@@ -22,17 +22,38 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-
+                    TodoList()
                 }
             }
         }
     }
 }
 
+@Composable
+fun TodoList(){
+
+}
+
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
     TodoListTheme {
+        TodoList()
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun InputDataPreview(){
+    TodoListTheme {
+
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun TodoData(){
+    TodoListTheme{
 
     }
 }
